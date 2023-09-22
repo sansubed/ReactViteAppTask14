@@ -2,12 +2,12 @@
   margin-top: 30%;
   background-color: blue;
   height: 200px;
-  width: 91%;
+  width: 100%;
 }
 
 .btn {
   position: absolute;
-  right: 90px;
+  right: 8px;
   height: 25px;
   width: 25px;
   border-radius: 5px;
