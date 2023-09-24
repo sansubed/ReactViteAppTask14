@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./advertisement.module.css";
 
 function Advertisement() {
+  const [open, setOpen] = useState(true);
   return (
     <>
-      <div className={styles.modal}>
-        Advertisement
-        <button className={styles.btn}>X</button>
-      </div>
+      {open && (
+        <div className={styles.modal}>
+          Advertisement
+          <button className={styles.btn} onClick={() => setOpen(!open)}>
+            X
+          </button>
+        </div>
+      )}
     </>
   );
 }
